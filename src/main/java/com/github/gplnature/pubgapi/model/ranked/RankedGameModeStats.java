@@ -6,6 +6,8 @@ public class RankedGameModeStats {
     private RankedGameModeStatsObj squad;
     @JsonProperty("squad-fpp")
     private RankedGameModeStatsObj squadfpp;
+    @JsonProperty("All")
+    private RankedGameModeStatsObj all;
 
     public RankedGameModeStatsObj getSquad() {
         return squad;
@@ -13,5 +15,9 @@ public class RankedGameModeStats {
 
     public RankedGameModeStatsObj getSquadfpp() {
         return squadfpp;
+    }
+
+    public RankedGameModeStatsObj getAll() {
+        return all;
     }
 }
